@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+  
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Playwrite GB J", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.plus-icon-style{
+  height: 100px
+}
+
+
+
+.kanban-board{
+ display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 20px;
+  width: 100%;
+ 
+}
+
+.todo-group{
+  display: flex;
+ align-items: center; 
+}
+.tabs{
+ writing-mode: vertical-rl;
+ transform: rotate(180deg); 
+  text-orientation:mixed;   
+  border: 2px solid white;
+  padding: 12px 6px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 0px 10px 10px 0px;
+  height: 120px;
+}
+
+.todo{
+  background-color: #181717;
+  height: 400px;
+  width: 200px;
+  padding:20px;
+  overflow-y: scroll;
+  border-radius: 20px;
+}
+.in-progress{
+   background-color: #181717;
+  height: 400px;
+  width: 200px;
+   padding:20px;
+ overflow-y: scroll;
+  border-radius: 20px;
+}
+
+.done{
+   background-color: #181717;
+  height: 400px;
+  width: 200px;
+   padding:20px;
+ overflow-y: scroll;
+  border-radius: 20px;
+}
+
+.task-card{
+  background-color: #242424;
+  border: 2px solid white;
+  padding: 3px;
+  border-style: dashed;
+  margin-bottom: 10px;
+}
+.task-title{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  position: relative;
+  margin: 0;
+  border-bottom: 2px solid white ;
+  border-style: none none dashed none;
+  padding: 3px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.task-actions{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-arrow {
+  border: none;
+  padding: 1px; 
+  background: none;
+  display: inline-flex; /* Ensures perfect alignment inside the text line */
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity 0.2s ease-in-out; 
+}
+
+.right-arrow:hover {
+  opacity: 0.7; 
+}
+
+.delete-button {
+  border: none;
+  padding: 1px; 
+  background: none;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  
+  transition: opacity 0.2s ease-in-out; 
+}
+
+.delete-button:hover {
+  opacity: 0.7; 
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+}
+
+.new-entry-modal {
+  background-color: #1a1a1a;  
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 450px;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+  padding: 10px;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.modal-action{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-save {
+  display: block;
+  width: 100 ;
+
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
